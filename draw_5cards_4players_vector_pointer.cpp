@@ -42,18 +42,18 @@ srand(time(0));
 	print_hand(vplayer3, &player);
 	print_hand(vplayer4, &player);
 	
-system("pause");
+	system("pause");
 
-    cout<<" *** CHANGE PHASE ***"<<endl<<endl;
-    player=1;
+    	cout<<" *** CHANGE PHASE ***"<<endl<<endl;
+    	player=1;
 	change_card(vplayer1, deck, &player);
 	change_card(vplayer2, deck, &player);
 	change_card(vplayer3, deck, &player);
 	change_card(vplayer4, deck, &player);
 	
-system("pause");
+	system("pause");
 
-    cout<<" *** DRAW PHASE #2 ***"<<endl<<endl;
+    	cout<<" *** DRAW PHASE #2 ***"<<endl<<endl;
 	player=1;
 	print_hand(vplayer1, &player);
 	print_hand(vplayer2, &player);
@@ -108,7 +108,7 @@ void print_hand(vector <int> vplayer, int* player)
 			{
 				if (vplayer[card]==11)
 				{
-                    cout<<" K ";
+                    			cout<<" K ";
 				}else if (vplayer[card]==12)
 				{
 					cout<<" Q ";
@@ -124,7 +124,7 @@ void print_hand(vector <int> vplayer, int* player)
 				cout<<"<3-"<<endl;
 			}else if ((vplayer[card]>=14)&&(vplayer[card]<27))
 			{
-                if (vplayer[card]==24)
+                		if (vplayer[card]==24)
 				{
 					cout<<" K ";
 				}else if (vplayer[card]==25)
@@ -142,7 +142,7 @@ void print_hand(vector <int> vplayer, int* player)
 				cout<<"<3"<<endl;
 			}else if ((vplayer[card]>=27)&&(vplayer[card]<40))
 			{
-                if (vplayer[card]==37)
+                		if (vplayer[card]==37)
 				{
 					cout<<" K ";
 				}else if (vplayer[card]==38)
@@ -160,7 +160,7 @@ void print_hand(vector <int> vplayer, int* player)
 				cout<<"c3-"<<endl;
 			}else if (vplayer[card]>=40)
 			{
-                if (vplayer[card]==50)
+                		if (vplayer[card]==50)
 				{
 					cout<<" K ";
 				}else if (vplayer[card]==51)
@@ -173,7 +173,7 @@ void print_hand(vector <int> vplayer, int* player)
 				{
 					cout<<" A ";
 				}else{
-                    cout<<" "<<vplayer[card]-39<<" ";
+                    			cout<<" "<<vplayer[card]-39<<" ";
 				}
 				cout<<"<>"<<endl;
 			}
