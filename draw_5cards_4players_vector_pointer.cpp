@@ -28,6 +28,13 @@ srand(time(0));
 		deck[card]=card+1;
 	}
 	
+	//other option to write that, is:
+	//vector <int> deck;
+	//for (card=0; card<52; ++card)
+	//{
+	//	deck.push_back(card+1);
+	//}
+	
 	random_shuffle(deck.begin(),deck.end());
 	
 	player_hand(vplayer1, deck);
